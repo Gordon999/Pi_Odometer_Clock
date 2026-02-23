@@ -5,23 +5,29 @@ import datetime
 import time
 from random import randrange
 from pygame.locals import *
+
+# find username
+h_user = "/home/" + os.getlogin( )
+
+print('/home/' + h_user + '/Documents/1a.png')
+
 pygame.init()
 pygame.display.set_caption('Pi-Odometer-Clock')
 windowSurfaceObj = pygame.display.set_mode((480, 320), pygame.NOFRAME, 24)
 x = 25
 y = 100
 
-digit1a = pygame.image.load('/home/pi/Documents/1a.png').convert()
-digit2a = pygame.image.load('/home/pi/Documents/2a.png').convert()
-digit3a = pygame.image.load('/home/pi/Documents/3a.png').convert()
-digit4a = pygame.image.load('/home/pi/Documents/4a.png').convert()
-digit5a = pygame.image.load('/home/pi/Documents/5a.png').convert()
-digit6a = pygame.image.load('/home/pi/Documents/6a.png').convert()
-digit7a = pygame.image.load('/home/pi/Documents/7a.png').convert()
-digit8a = pygame.image.load('/home/pi/Documents/8a.png').convert()
-digit9a = pygame.image.load('/home/pi/Documents/9a.png').convert()
-digit0a = pygame.image.load('/home/pi/Documents/0a.png').convert()
-digitbl = pygame.image.load('/home/pi/Documents/bl.png').convert()
+digit1a = pygame.image.load(h_user + '/Documents/1a.png').convert()
+digit2a = pygame.image.load(h_user + '/Documents/2a.png').convert()
+digit3a = pygame.image.load(h_user + '/Documents/3a.png').convert()
+digit4a = pygame.image.load(h_user + '/Documents/4a.png').convert()
+digit5a = pygame.image.load(h_user + '/Documents/5a.png').convert()
+digit6a = pygame.image.load(h_user + '/Documents/6a.png').convert()
+digit7a = pygame.image.load(h_user + '/Documents/7a.png').convert()
+digit8a = pygame.image.load(h_user + '/Documents/8a.png').convert()
+digit9a = pygame.image.load(h_user + '/Documents/9a.png').convert()
+digit0a = pygame.image.load(h_user + '/Documents/0a.png').convert()
+digitbl = pygame.image.load(h_user + '/Documents/bl.png').convert()
 
 data = [digit0a,digit1a,digit2a,digit3a,digit4a,digit5a,digit6a,digit7a,digit8a,digit9a]
 now = datetime.datetime.now()
