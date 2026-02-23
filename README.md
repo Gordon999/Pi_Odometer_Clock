@@ -2,4 +2,4 @@
 
 ![screenshot](clock.jpg)
 
-Copy the files into /home/pi/ and unzip the .zip into /home/pi/Documents
+Copy the files into /home/USERNAME/ and unzip the .zip into /home/USERNAME/Documents
